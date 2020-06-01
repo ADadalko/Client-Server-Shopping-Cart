@@ -39,7 +39,7 @@ public:
 	}
 	void inputfileGOALKEEPER() {
 		fout.open("FOOTBALL_SHOP.txt", ios::out | ios::app);
-		fout << "\nÂðàòàðñêèå ïåð÷àòêè:\n";
+		fout << "\nÐ’Ñ€Ð°Ñ‚Ð°Ñ€ÑÐºÐ¸Ðµ Ð¿ÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸:\n";
 		fout << "Nike: " << Nike << "\n";
 		fout << "Adidas: " << Adidas << "\n";
 		fout << "Reusch: " << Reusch << "\n";
@@ -48,7 +48,7 @@ public:
 	}
 	void allGOALKEEPER() {
 		system("cls");
-		cout << endl << "Âðàòàðñêèå ïåð÷àòêè" << endl;
+		cout << endl << "Ð’Ñ€Ð°Ñ‚Ð°Ñ€ÑÐºÐ¸Ðµ Ð¿ÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandReusch << " - " << endl;
@@ -65,7 +65,7 @@ public:
 				prevNike = Nike;
 				Nike = Nike - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ïåð÷àòêè " << brandNike << " - " << number << " (øò)\n";
+				fout << "ÐŸÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸ " << brandNike << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 2:
@@ -73,7 +73,7 @@ public:
 				prevAdidas = Adidas;
 				Adidas = Adidas - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ïåð÷àòêè " << brandAdidas << " - " << number << " (øò)\n";
+				fout << "ÐŸÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸ " << brandAdidas << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 3:
@@ -81,7 +81,7 @@ public:
 				prevReusch = Reusch;
 				Reusch = Reusch - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ïåð÷àòêè " << brandReusch << " - " << number << " (øò)\n";
+				fout << "ÐŸÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸ " << brandReusch << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 4:
@@ -89,7 +89,7 @@ public:
 				prevUhlsport = Uhlsport;
 				Uhlsport = Uhlsport - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ïåð÷àòêè " << brandUhlsport << " - " << number << " (øò)\n";
+				fout << "ÐŸÐµÑ€Ñ‡Ð°Ñ‚ÐºÐ¸ " << brandUhlsport << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 5:
