@@ -1,3 +1,4 @@
+
 #pragma once
 #include <string>
 #include <iostream>
@@ -34,8 +35,8 @@ public:
 	BAGS() {};
 	void pereuchBAGS() {
 		system("cls");
-		cout << endl << "Ââåäèòå êîëè÷åñòâî òîâàðà â øóòêàõ" << endl;
-		cout << "Ñóìêè è ðþêçàêè:" << endl;
+		cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÑˆÑƒÑ‚ÐºÐ°Ñ…" << endl;
+		cout << "Ð¡ÑƒÐ¼ÐºÐ¸ Ð¸ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸:" << endl;
 		cout << brandNike << ": ";
 		while (true) {
 			try {
@@ -44,7 +45,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Nike, sizeof(Nike), 0);
@@ -56,7 +57,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Adidas, sizeof(Adidas), 0);
@@ -68,7 +69,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Kempa, sizeof(Kempa), 0);
@@ -80,13 +81,13 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Joma, sizeof(Joma), 0);
 	}
 	void showBAGS() {
-		cout << endl << "Ñóìêè è ðþêçàêè (øò):" << endl;
+		cout << endl << "Ð¡ÑƒÐ¼ÐºÐ¸ Ð¸ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ (ÑˆÑ‚):" << endl;
 		cout << brandNike << ": " << Nike << endl;
 		cout << brandAdidas << ": " << Adidas << endl;
 		cout << brandKempa << ": " << Kempa << endl;
@@ -96,7 +97,7 @@ public:
 	}
 	void allBAGS() {
 		system("cls");
-		cout << endl << "Ñóìêè è ðþêçàêè" << endl;
+		cout << endl << "Ð¡ÑƒÐ¼ÐºÐ¸ Ð¸ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandKempa << " - " << endl;
@@ -107,21 +108,21 @@ public:
 		int number;
 		do {
 			system("cls");
-			cout << endl << "Ðþêçàêè è ñóìêè (øò):" << endl;
+			cout << endl << "Ð ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ (ÑˆÑ‚):" << endl;
 			cout << "1 - " << brandNike << ": " << Nike << endl;
 			cout << "2 - " << brandAdidas << ": " << Adidas << endl;
 			cout << "3 - " << brandKempa << ": " << Kempa << endl;
 			cout << "4 - " << brandJoma << ": " << Joma << endl;
-			cout << "5 - óòâåðäèòü çàêàç" << endl;
+			cout << "5 - ÑƒÑ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·" << endl;
 			cin >> choice5;
 			while (choice5 < 1 || choice5 > 5)
 			{
-				cout << "Íåò òàêîãî âàðèàíòà!" << endl;
+				cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°!" << endl;
 				cin >> choice5;
 			}
 			switch (choice5) {
 			case 1:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -129,7 +130,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -137,7 +138,7 @@ public:
 				Nike = Nike - number;
 				break;
 			case 2:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -145,7 +146,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -153,7 +154,7 @@ public:
 				Adidas = Adidas - number;
 				break;
 			case 3:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -161,7 +162,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -169,7 +170,7 @@ public:
 				Kempa = Kempa - number;
 				break;
 			case 4:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -177,7 +178,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -193,7 +194,7 @@ public:
 		int biggest = 0;
 		int brand = 0;
 		if (prevNike == 0 && prevAdidas == 0 && prevKempa == 0 && prevJoma == 0) {
-			cout << "Â äàííûé ìîìåíò âûâåñòè ðåêîìåíäàöèè ïî îïòèìèçàöèè çàêóïîê ôóòáîëüíûõ ùèêòîâ íåâîçìîæíî" << endl;
+			cout << "Ð’ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð·Ð°ÐºÑƒÐ¿Ð¾Ðº Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ñ‰Ð¸ÐºÑ‚Ð¾Ð² Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾" << endl;
 		}
 		else {
 			summaryNike = prevNike - Nike;
@@ -203,16 +204,16 @@ public:
 			biggest = summaryNike;
 			recv(Connection, (char*)&brand, sizeof(brand), 0);
 			if (brand == 1) {
-				cout << "Ñàìûå âîñòðåáîâàííûå ðþêçàêè è ñóìêè - ðþêçàêè è ñóìêè áðåíäà " << brandNike << endl;
+				cout << "Ð¡Ð°Ð¼Ñ‹Ðµ Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ - Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandNike << endl;
 			}
 			if (brand == 2) {
-				cout << "Ñàìûå âîñòðåáîâàííûå ðþêçàêè è ñóìêè - ðþêçàêè è ñóìêè áðåíäà " << brandAdidas << endl;
+				cout << "Ð¡Ð°Ð¼Ñ‹Ðµ Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ - Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandAdidas << endl;
 			}
 			if (brand == 3) {
-				cout << "Ñàìûå âîñòðåáîâàííûå ðþêçàêè è ñóìêè - ðþêçàêè è ñóìêè áðåíäà " << brandKempa << endl;
+				cout << "Ð¡Ð°Ð¼Ñ‹Ðµ Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ - Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandKempa << endl;
 			}
 			if (brand == 4) {
-				cout << "Ñàìûå âîñòðåáîâàííûå ðþêçàêè è ñóìêè - ðþêçàêè è ñóìêè áðåíäà " << brandJoma << endl;
+				cout << "Ð¡Ð°Ð¼Ñ‹Ðµ Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ðµ Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ - Ñ€ÑŽÐºÐ·Ð°ÐºÐ¸ Ð¸ ÑÑƒÐ¼ÐºÐ¸ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandJoma << endl;
 			}
 		}
 	}
@@ -248,8 +249,8 @@ public:
 	SOCKS() {};
 	void pereuchSOCKS() {
 		system("cls");
-		cout << endl << "Ââåäèòå êîëè÷åñòâî òîâàðà â øóòêàõ" << endl;
-		cout << "Ôóòáîëüíûå ãåòðû:" << endl;
+		cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÑˆÑƒÑ‚ÐºÐ°Ñ…" << endl;
+		cout << "Ð¤ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ð³ÐµÑ‚Ñ€Ñ‹:" << endl;
 		cout << brandNike << ": ";
 		while (true) {
 			try {
@@ -258,7 +259,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Nike, sizeof(Nike), 0);
@@ -270,7 +271,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Adidas, sizeof(Adidas), 0);
@@ -282,7 +283,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Puma, sizeof(Puma), 0);
@@ -294,13 +295,13 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Joma, sizeof(Joma), 0);
 	}
 	void showSOCKS() {
-		cout << endl << "Ôóòáîëüíûå ãåòðû (øò):" << endl;
+		cout << endl << "Ð¤ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ð³ÐµÑ‚Ñ€Ñ‹ (ÑˆÑ‚):" << endl;
 		cout << brandNike << ": " << Nike << endl;
 		cout << brandAdidas << ": " << Adidas << endl;
 		cout << brandPuma << ": " << Puma << endl;
@@ -310,7 +311,7 @@ public:
 	}
 	void allSOCKS() {
 		system("cls");
-		cout << endl << "Ãåòðû" << endl;
+		cout << endl << "Ð“ÐµÑ‚Ñ€Ñ‹" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandPuma << " - " << endl;
@@ -321,22 +322,22 @@ public:
 		int number;
 		do {
 			system("cls");
-			cout << endl << "Ãåòðû (øò):" << endl;
+			cout << endl << "Ð“ÐµÑ‚Ñ€Ñ‹ (ÑˆÑ‚):" << endl;
 			cout << "1 - " << brandNike << ": " << Nike << endl;
 			cout << "2 - " << brandAdidas << ": " << Adidas << endl;
 			cout << "3 - " << brandPuma << ": " << Puma << endl;
 			cout << "4 - " << brandJoma << ": " << Joma << endl;
-			cout << "5 - óòâåðäèòü çàêàç" << endl;
+			cout << "5 - ÑƒÑ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·" << endl;
 			cin >> choice5;
 			send(Connection, (char*)&choice5, sizeof(choice5), 0);
 			while (choice5 < 1 || choice5 > 5)
 			{
-				cout << "Íåò òàêîãî âàðèàíòà!" << endl;
+				cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°!" << endl;
 				cin >> choice5;
 			}
 			switch (choice5) {
 			case 1:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -344,7 +345,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -352,7 +353,7 @@ public:
 				Nike = Nike - number;
 				break;
 			case 2:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -360,7 +361,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -368,7 +369,7 @@ public:
 				Adidas = Adidas - number;
 				break;
 			case 3:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -376,7 +377,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -384,7 +385,7 @@ public:
 				Puma = Puma - number;
 				break;
 			case 4:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -392,7 +393,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -408,7 +409,7 @@ public:
 		int biggest = 0;
 		int brand = 0;
 		if (prevNike == 0 && prevAdidas == 0 && prevPuma == 0 && prevJoma == 0) {
-			cout << "Â äàííûé ìîìåíò âûâåñòè ðåêîìåíäàöèè ïî îïòèìèçàöèè çàêóïîê ôóòáîëüíûõ ãåòð íåâîçìîæíî" << endl;
+			cout << "Ð’ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð·Ð°ÐºÑƒÐ¿Ð¾Ðº Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð³ÐµÑ‚Ñ€ Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾" << endl;
 		}
 		else {
 			summaryNike = prevNike - Nike;
@@ -418,16 +419,16 @@ public:
 			biggest = summaryNike;
 			recv(Connection, (char*)&brand, sizeof(brand), 0);
 			if (brand == 1) {
-				cout << "Åñòü âîçìîæíîñòü óâåëè÷èòü ïðèáûëü ìàãàçèíà, åñëè óâåëè÷èòü çàêóïêó ôóòáîëüíûõ ãåòð áðåíäà " << brandNike << endl;
+				cout << "Ð•ÑÑ‚ÑŒ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, ÐµÑÐ»Ð¸ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÑƒÐ¿ÐºÑƒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð³ÐµÑ‚Ñ€ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandNike << endl;
 			}
 			if (brand == 2) {
-				cout << "Åñòü âîçìîæíîñòü óâåëè÷èòü ïðèáûëü ìàãàçèíà, åñëè óâåëè÷èòü çàêóïêó ôóòáîëüíûõ ãåòð áðåíäà " << brandAdidas << endl;
+				cout << "Ð•ÑÑ‚ÑŒ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, ÐµÑÐ»Ð¸ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÑƒÐ¿ÐºÑƒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð³ÐµÑ‚Ñ€ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandAdidas << endl;
 			}
 			if (brand == 3) {
-				cout << "Åñòü âîçìîæíîñòü óâåëè÷èòü ïðèáûëü ìàãàçèíà, åñëè óâåëè÷èòü çàêóïêó ôóòáîëüíûõ ãåòð áðåíäà " << brandPuma << endl;
+				cout << "Ð•ÑÑ‚ÑŒ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, ÐµÑÐ»Ð¸ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÑƒÐ¿ÐºÑƒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð³ÐµÑ‚Ñ€ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandPuma << endl;
 			}
 			if (brand == 4) {
-				cout << "Åñòü âîçìîæíîñòü óâåëè÷èòü ïðèáûëü ìàãàçèíà, åñëè óâåëè÷èòü çàêóïêó ôóòáîëüíûõ ãåòð áðåíäà " << brandJoma << endl;
+				cout << "Ð•ÑÑ‚ÑŒ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ÑÑ‚ÑŒ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð¿Ñ€Ð¸Ð±Ñ‹Ð»ÑŒ Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð°, ÐµÑÐ»Ð¸ ÑƒÐ²ÐµÐ»Ð¸Ñ‡Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÑƒÐ¿ÐºÑƒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ð³ÐµÑ‚Ñ€ Ð±Ñ€ÐµÐ½Ð´Ð° " << brandJoma << endl;
 			}
 		}
 	}
@@ -462,8 +463,8 @@ public:
 	PADS() {};
 	void pereuchPADS() {
 		system("cls");
-		cout << endl << "Ââåäèòå êîëè÷åñòâî òîâàðà â øóòêàõ" << endl;
-		cout << "Ùèòêè:" << endl;
+		cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð° Ð² ÑˆÑƒÑ‚ÐºÐ°Ñ…" << endl;
+		cout << "Ð©Ð¸Ñ‚ÐºÐ¸:" << endl;
 		cout << brandNike << ": ";
 		while (true) {
 			try {
@@ -472,7 +473,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Nike, sizeof(Nike), 0);
@@ -484,7 +485,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Adidas, sizeof(Adidas), 0);
@@ -496,7 +497,7 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Demix, sizeof(Demix), 0);
@@ -508,13 +509,13 @@ public:
 				else break;
 			}
 			catch (int) {
-				cout << "Îøèáêà ââîäà" << endl;
+				cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 			}
 		}
 		send(Connection, (char*)&Fora, sizeof(Fora), 0);
 	}
 	void showPADS() {
-		cout << endl << "Ùèòêè (øò):" << endl;
+		cout << endl << "Ð©Ð¸Ñ‚ÐºÐ¸ (ÑˆÑ‚):" << endl;
 		cout << brandNike << ": " << Nike << endl;
 		cout << brandAdidas << ": " << Adidas << endl;
 		cout << brandDemix << ": " << Demix << endl;
@@ -524,7 +525,7 @@ public:
 	}
 	void allPADS() {
 		system("cls");
-		cout << endl << "Ùèòêè" << endl;
+		cout << endl << "Ð©Ð¸Ñ‚ÐºÐ¸" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandDemix << " - " << endl;
@@ -535,22 +536,22 @@ public:
 		int number;
 		do {
 			system("cls");
-			cout << endl << "Ùèòêè (øò):" << endl;
+			cout << endl << "Ð©Ð¸Ñ‚ÐºÐ¸ (ÑˆÑ‚):" << endl;
 			cout << "1 - " << brandNike << ": " << Nike << endl;
 			cout << "2 - " << brandAdidas << ": " << Adidas << endl;
 			cout << "3 - " << brandDemix << ": " << Demix << endl;
 			cout << "4 - " << brandFora << ": " << Fora << endl;
-			cout << "5 - óòâåðäèòü çàêàç" << endl;
+			cout << "5 - ÑƒÑ‚Ð²ÐµÑ€Ð´Ð¸Ñ‚ÑŒ Ð·Ð°ÐºÐ°Ð·" << endl;
 			cin >> choice5;
 			while (choice5 < 1 || choice5 > 5)
 			{
-				cout << "Íåò òàêîãî âàðèàíòà!" << endl;
+				cout << "ÐÐµÑ‚ Ñ‚Ð°ÐºÐ¾Ð³Ð¾ Ð²Ð°Ñ€Ð¸Ð°Ð½Ñ‚Ð°!" << endl;
 				cin >> choice5;
 			}
 			send(Connection, (char*)&choice5, sizeof(choice5), 0);
 			switch (choice5) {
 			case 1:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -558,7 +559,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -566,7 +567,7 @@ public:
 				Nike = Nike - number;
 				break;
 			case 2:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -574,7 +575,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -582,7 +583,7 @@ public:
 				Adidas = Adidas - number;
 				break;
 			case 3:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -590,7 +591,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -598,7 +599,7 @@ public:
 				Demix = Demix - number;
 				break;
 			case 4:
-				cout << endl << "Ââåäèòå êîëè÷åñòâî ïðèîáðåòàåìîãî òîâàðà:" << endl;
+				cout << endl << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ñ€Ð¸Ð¾Ð±Ñ€ÐµÑ‚Ð°ÐµÐ¼Ð¾Ð³Ð¾ Ñ‚Ð¾Ð²Ð°Ñ€Ð°:" << endl;
 				while (true) {
 					try {
 						cin >> number;
@@ -606,7 +607,7 @@ public:
 						else break;
 					}
 					catch (int) {
-						cout << "Îøèáêà ââîäà" << endl;
+						cout << "ÐžÑˆÐ¸Ð±ÐºÐ° Ð²Ð²Ð¾Ð´Ð°" << endl;
 					}
 				}
 				send(Connection, (char*)&number, sizeof(number), 0);
@@ -623,7 +624,7 @@ public:
 		int biggest = 0;
 		int brand = 0;
 		if (prevNike == 0 && prevAdidas == 0 && prevDemix == 0 && prevFora == 0) {
-			cout << "Â äàííûé ìîìåíò âûâåñòè ðåêîìåíäàöèè ïî îïòèìèçàöèè çàêóïîê ôóòáîëüíûõ ùèêòîâ íåâîçìîæíî" << endl;
+			cout << "Ð’ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ Ñ€ÐµÐºÐ¾Ð¼ÐµÐ½Ð´Ð°Ñ†Ð¸Ð¸ Ð¿Ð¾ Ð¾Ð¿Ñ‚Ð¸Ð¼Ð¸Ð·Ð°Ñ†Ð¸Ð¸ Ð·Ð°ÐºÑƒÐ¿Ð¾Ðº Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ñ… Ñ‰Ð¸ÐºÑ‚Ð¾Ð² Ð½ÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾" << endl;
 		}
 		else {
 			summaryNike = prevNike - Nike;
@@ -633,16 +634,16 @@ public:
 			biggest = summaryNike;
 			recv(Connection, (char*)&brand, sizeof(brand), 0);
 			if (brand == 1) {
-				cout << "Ñðåäè ñàìûõ âîñòðåáîâàííûõ òîâàðîâ ìàãàçèíà îêàçàëèñü ôóòáîëüíûå ùèòêè îò ïðîèçâîäèòåëÿ " << brandNike << endl;
+				cout << "Ð¡Ñ€ÐµÐ´Ð¸ ÑÐ°Ð¼Ñ‹Ñ… Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾ÐºÐ°Ð·Ð°Ð»Ð¸ÑÑŒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ñ‰Ð¸Ñ‚ÐºÐ¸ Ð¾Ñ‚ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ " << brandNike << endl;
 			}
 			if (brand == 2) {
-				cout << "Ñðåäè ñàìûõ âîñòðåáîâàííûõ òîâàðîâ ìàãàçèíà îêàçàëèñü ôóòáîëüíûå ùèòêè îò ïðîèçâîäèòåëÿ " << brandAdidas << endl;
+				cout << "Ð¡Ñ€ÐµÐ´Ð¸ ÑÐ°Ð¼Ñ‹Ñ… Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾ÐºÐ°Ð·Ð°Ð»Ð¸ÑÑŒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ñ‰Ð¸Ñ‚ÐºÐ¸ Ð¾Ñ‚ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ " << brandAdidas << endl;
 			}
 			if (brand == 3) {
-				cout << "Ñðåäè ñàìûõ âîñòðåáîâàííûõ òîâàðîâ ìàãàçèíà îêàçàëèñü ôóòáîëüíûå ùèòêè îò ïðîèçâîäèòåëÿ " << brandDemix << endl;
+				cout << "Ð¡Ñ€ÐµÐ´Ð¸ ÑÐ°Ð¼Ñ‹Ñ… Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾ÐºÐ°Ð·Ð°Ð»Ð¸ÑÑŒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ñ‰Ð¸Ñ‚ÐºÐ¸ Ð¾Ñ‚ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ " << brandDemix << endl;
 			}
 			if (brand == 4) {
-				cout << "Ñðåäè ñàìûõ âîñòðåáîâàííûõ òîâàðîâ ìàãàçèíà îêàçàëèñü ôóòáîëüíûå ùèòêè îò ïðîèçâîäèòåëÿ " << brandFora << endl;
+				cout << "Ð¡Ñ€ÐµÐ´Ð¸ ÑÐ°Ð¼Ñ‹Ñ… Ð²Ð¾ÑÑ‚Ñ€ÐµÐ±Ð¾Ð²Ð°Ð½Ð½Ñ‹Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¾Ð² Ð¼Ð°Ð³Ð°Ð·Ð¸Ð½Ð° Ð¾ÐºÐ°Ð·Ð°Ð»Ð¸ÑÑŒ Ñ„ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ñ‰Ð¸Ñ‚ÐºÐ¸ Ð¾Ñ‚ Ð¿Ñ€Ð¾Ð¸Ð·Ð²Ð¾Ð´Ð¸Ñ‚ÐµÐ»Ñ " << brandFora << endl;
 			}
 		}
 	}
