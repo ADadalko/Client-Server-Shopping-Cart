@@ -41,7 +41,7 @@ public:
 	}
 	void inputfileKITS() {
 		fout.open("FOOTBALL_SHOP.txt", ios::out | ios::app);
-		fout << "\nÔóòáîëüíàÿ ôîðìà:\n";
+		fout << "\nÐ¤ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð°:\n";
 		fout << "Nike: " << Nike << "\n";
 		fout << "Adidas: " << Adidas << "\n";
 		fout << "Givova: " << Givova << "\n";
@@ -50,7 +50,7 @@ public:
 	}
 	void allKITS() {
 		system("cls");
-		cout << endl << "Ôóòáîëüíàÿ ôîðìà" << endl;
+		cout << endl << "Ð¤ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ð°Ñ Ñ„Ð¾Ñ€Ð¼Ð°" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandGivova << " - " << endl;
@@ -67,7 +67,7 @@ public:
 				prevNike = Nike;
 				Nike = Nike - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ôîðìû " << brandNike << " - " << number << " (øò)\n";
+				fout << "Ð¤Ð¾Ñ€Ð¼Ñ‹ " << brandNike << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 2:
@@ -75,7 +75,7 @@ public:
 				prevAdidas = Adidas;
 				Adidas = Adidas - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ôîðìû " << brandAdidas << " - " << number << " (øò)\n";
+				fout << "Ð¤Ð¾Ñ€Ð¼Ñ‹ " << brandAdidas << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 3:
@@ -83,7 +83,7 @@ public:
 				prevGivova = Givova;
 				Givova = Givova - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ôîðìû " << brandGivova << " - " << number << " (øò)\n";
+				fout << "Ð¤Ð¾Ñ€Ð¼Ñ‹ " << brandGivova << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 4:
@@ -91,7 +91,7 @@ public:
 				prevMasita = Masita;
 				Masita = Masita - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ôîðìû " << brandMasita << " - " << number << " (øò)\n";
+				fout << "Ð¤Ð¾Ñ€Ð¼Ñ‹ " << brandMasita << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 5:
