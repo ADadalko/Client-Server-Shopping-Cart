@@ -41,7 +41,7 @@ public:
 	}
 	void inputfileBOOTS() {
 		fout.open("FOOTBALL_SHOP.txt", ios::out | ios::app);
-		fout << "\nÁóòñû:\n";
+		fout << "\nÐ‘ÑƒÑ‚ÑÑ‹:\n";
 		fout << "Nike: " << Nike << "\n";
 		fout << "Adidas: " << Adidas << "\n";
 		fout << "Puma: " << Puma << "\n";
@@ -50,7 +50,7 @@ public:
 	}
 	void allBOOTS() {
 		system("cls");
-		cout << endl << "Áóòñû" << endl;
+		cout << endl << "Ð‘ÑƒÑ‚ÑÑ‹" << endl;
 		cout << "1 - " << brandNike << endl;
 		cout << "2 - " << brandAdidas << endl;
 		cout << "3 - " << brandPuma << endl;
@@ -67,7 +67,7 @@ public:
 				prevNike = Nike;
 				Nike = Nike - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Áóòñû " << brandNike << " - " << number << " (øò)\n";
+				fout << "Ð‘ÑƒÑ‚ÑÑ‹ " << brandNike << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 2:
@@ -75,7 +75,7 @@ public:
 				prevAdidas = Adidas;
 				Adidas = Adidas - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Áóòñû " << brandAdidas << " - " << number << " (øò)\n";
+				fout << "Ð‘ÑƒÑ‚ÑÑ‹ " << brandAdidas << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 3:
@@ -83,7 +83,7 @@ public:
 				prevPuma = Puma;
 				Puma = Puma - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Áóòñû " << brandPuma << " - " << number << " (øò)\n";
+				fout << "Ð‘ÑƒÑ‚ÑÑ‹ " << brandPuma << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 4:
@@ -91,7 +91,7 @@ public:
 				prevJoma = Joma;
 				Joma = Joma - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Áóòñû " << brandJoma << " - " << number << " (øò)\n";
+				fout << "Ð‘ÑƒÑ‚ÑÑ‹ " << brandJoma << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 5:
