@@ -1,0 +1,42 @@
+
+Ѕутсы:
+Nike: 13
+Adidas: 50
+Puma: 33
+Joma: 17
+
+ћ€чи:
+Nike: 22
+Adidas: 70
+Select: 43
+Kelme: 29
+
+‘утбольна€ форма:
+Nike: 44
+Adidas: 22
+Givova: 11
+Masita: 33
+
+¬ратарские перчатки:
+Nike: 3
+Adidas: 12
+Reusch: 2
+Uhlsport: 7
+
+—умки и рюкзаки:
+Nike: 8
+Adidas: 8
+Kempa: 12
+Joma: 4
+
+√етры:
+Nike: 1
+Adidas: 1
+Puma: 5
+Joma: 6
+
+ўитки:
+Nike: 9
+Adidas: 8
+Demix: 3
+Fora: 4
