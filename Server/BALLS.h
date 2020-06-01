@@ -42,7 +42,7 @@ public:
 	}
 	void inputfileBALLS() {
 		fout.open("FOOTBALL_SHOP.txt", ios::out | ios::app);
-		fout << "\nÌÿ÷è:\n";
+		fout << "\nÐœÑÑ‡Ð¸:\n";
 		fout << "Nike: " << Nike << "\n";
 		fout << "Adidas: " << Adidas << "\n";
 		fout << "Select: " << Select << "\n";
@@ -51,7 +51,7 @@ public:
 	}
 	void allBALLS() {
 		system("cls");
-		cout << endl << "Ôóòáîëüíûå ìÿ÷è" << endl;
+		cout << endl << "Ð¤ÑƒÑ‚Ð±Ð¾Ð»ÑŒÐ½Ñ‹Ðµ Ð¼ÑÑ‡Ð¸" << endl;
 		cout << "1 - " << brandNike << " - " << endl;
 		cout << "2 - " << brandAdidas << " - " << endl;
 		cout << "3 - " << brandSelect << " - " << endl;
@@ -68,7 +68,7 @@ public:
 				prevNike = Nike;
 				Nike = Nike - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ìÿ÷è " << brandNike << " - " << number << " (øò)\n";
+				fout << "ÐœÑÑ‡Ð¸ " << brandNike << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 2:
@@ -76,7 +76,7 @@ public:
 				prevAdidas = Adidas;
 				Adidas = Adidas - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ìÿ÷è " << brandAdidas << " - " << number << " (øò)\n";
+				fout << "ÐœÑÑ‡Ð¸ " << brandAdidas << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 3:
@@ -84,7 +84,7 @@ public:
 				prevSelect = Select;
 				Select = Select - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ìÿ÷è " << brandSelect << " - " << number << " (øò)\n";
+				fout << "ÐœÑÑ‡Ð¸ " << brandSelect << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 4:
@@ -92,7 +92,7 @@ public:
 				prevKelme = Kelme;
 				Kelme = Kelme - number;
 				fout.open("CHECKS.txt", ios::out | ios::app);
-				fout << "Ìÿ÷è " << brandKelme << " - " << number << " (øò)\n";
+				fout << "ÐœÑÑ‡Ð¸ " << brandKelme << " - " << number << " (ÑˆÑ‚)\n";
 				fout.close();
 				break;
 			case 5:
