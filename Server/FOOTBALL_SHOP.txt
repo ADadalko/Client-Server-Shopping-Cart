@@ -1,41 +1,41 @@
 
-Бутсы:
+Р‘СѓС‚СЃС‹:
 Nike: 13
 Adidas: 50
 Puma: 33
 Joma: 17
 
-Мячи:
+РњСЏС‡Рё:
 Nike: 22
 Adidas: 70
 Select: 43
 Kelme: 29
 
-Футбольная форма:
+Р¤СѓС‚Р±РѕР»СЊРЅР°СЏ С„РѕСЂРјР°:
 Nike: 44
 Adidas: 22
 Givova: 11
 Masita: 33
 
-Вратарские перчатки:
+Р’СЂР°С‚Р°СЂСЃРєРёРµ РїРµСЂС‡Р°С‚РєРё:
 Nike: 3
 Adidas: 12
 Reusch: 2
 Uhlsport: 7
 
-Сумки и рюкзаки:
+РЎСѓРјРєРё Рё СЂСЋРєР·Р°РєРё:
 Nike: 8
 Adidas: 8
 Kempa: 12
 Joma: 4
 
-Гетры:
+Р“РµС‚СЂС‹:
 Nike: 1
 Adidas: 1
 Puma: 5
 Joma: 6
 
-Щитки:
+Р©РёС‚РєРё:
 Nike: 9
 Adidas: 8
 Demix: 3
