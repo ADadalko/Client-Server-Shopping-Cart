@@ -317,7 +317,7 @@ string stars()
 {
 	char str[100];
 	int k = 0;
-	while (1)      //звездочки в консоли, при вводе пароля       
+	while (1)      //Р·РІРµР·РґРѕС‡РєРё РІ РєРѕРЅСЃРѕР»Рё, РїСЂРё РІРІРѕРґРµ РїР°СЂРѕР»СЏ       
 	{
 		str[k] = _getch();
 		if (str[k] == '\r') break;
@@ -431,7 +431,7 @@ void Purchase() {
 	}
 	else {
 		fout.open("CHECKS.txt", ios::out | ios::app);
-		fout << "\n---------------Чек номер " << checks << "---------------\n";
+		fout << "\n---------------Р§РµРє РЅРѕРјРµСЂ " << checks << "---------------\n";
 		checks++;
 		fout.close();
 		do {
